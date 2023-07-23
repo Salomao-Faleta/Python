@@ -18,4 +18,32 @@
 
 
 
-#EXERCICÍO
+#USANDO MÓLUDOS DO PYTHON
+
+
+
+# #EXERCICÍO 16
+    #import math
+
+# numero = float(input('Digite um número: '))
+# print('A parte inteira de {} é {}'.format(numero, floor(numero)))
+
+
+
+#EXERCÍCIO 17
+    #import math
+
+'''
+    #FORMA MATEMÁTICA
+oposto = float(input('Qual o comprimentpo do Cateto Oposto?'))
+Adjacente = float(input('Qual o comprimentpo do Cateto Adjacente?'))
+hipotenusa = (oposto ** 2 + Adjacente ** 2) ** (1/2)
+print('A hipotenusa vai medir {:.2f}'.format(hipotenusa))
+
+    #FORMA COM MÓDULOS
+oposto = float(input('Qual o comprimentpo do Cateto Oposto?'))
+Adjacente = float(input('Qual o comprimentpo do Cateto Adjacente?'))
+hipotenusa = math.hypot(oposto, Adjacente)
+print(hipotenusa)
+
+'''
