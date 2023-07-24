@@ -1,20 +1,20 @@
-# #AQUI ESTÃO TOFDOS OS EXERCICÍOS DE PYTHON (@CURSOEMVIDEO)
+ #AQUI ESTÃO TOFDOS OS EXERCICÍOS DE PYTHON (@CURSOEMVIDEO)
 
 
 
 # #EXERCICÍO 5
-# numero = int(input('Digite um número'))
-# print('O sucessor de {} é {} o antecessor é {}'.format(numero, numero + 1, numero - 1))
+numero = int(input('Digite um número'))
+print('O sucessor de {} é {} o antecessor é {}'.format(numero, numero + 1, numero - 1))
 
 
-# #EXERCICÍO 6
-# numero = int(input('Digite um número'))
-# print('O dobro de {} é {}, o triplo é {} e a raiz quadrada é {:.2f}'.format(numero, numero * 2, numero * 3, numero ** (1/2)))
+#EXERCICÍO 6
+numero = int(input('Digite um número'))
+print('O dobro de {} é {}, o triplo é {} e a raiz quadrada é {:.2f}'.format(numero, numero * 2, numero * 3, numero ** (1/2)))
 
-# #EXERCICÍO 7
-# media1 = float(input('Qual a sua média? '))
-# media2 = float(input('Qual a sua média? '))
-# print('A média entre {} e {} é {}'.format(media1, media2, (media1 + media2) / 2))
+#EXERCICÍO 7
+media1 = float(input('Qual a sua média? '))
+media2 = float(input('Qual a sua média? '))
+print('A média entre {} e {} é {}'.format(media1, media2, (media1 + media2) / 2))
 
 
 
@@ -22,18 +22,17 @@
 
 
 
-# #EXERCICÍO 16
-    #import math
-
-# numero = float(input('Digite um número: '))
-# print('A parte inteira de {} é {}'.format(numero, floor(numero)))
+#EXERCICÍO 16
+import math
+numero = float(input('Digite um número: '))
+print('A parte inteira de {} é {}'.format(numero, floor(numero)))
 
 
 
 #EXERCÍCIO 17
-    #import math
+import math
 
-'''
+
     #FORMA MATEMÁTICA
 oposto = float(input('Qual o comprimentpo do Cateto Oposto?'))
 Adjacente = float(input('Qual o comprimentpo do Cateto Adjacente?'))
@@ -46,7 +45,6 @@ Adjacente = float(input('Qual o comprimentpo do Cateto Adjacente?'))
 hipotenusa = math.hypot(oposto, Adjacente)
 print(hipotenusa)
 
-'''
 
 
 
@@ -65,3 +63,16 @@ print('O cosseno de {:.1f} tem {:.2f}'. format(ângulo, cosseno))
 
 tangente = tan(radians(ângulo))
 print('O tangente de {:.1f} tem {:.2f}'. format(ângulo, tangente))
+
+
+#Exercício 19
+
+import random
+
+aluno1 = input('Digite um aluno: ')
+aluno2 = input('Digite um aluno: ')
+aluno3 = input('Digite um aluno: ')
+
+alunos = [aluno1, aluno2, aluno3]
+escolhido = random.choice(alunos)
+print('O aluno escolhido foi: {}'.format(escolhido))
