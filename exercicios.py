@@ -47,3 +47,21 @@ hipotenusa = math.hypot(oposto, Adjacente)
 print(hipotenusa)
 
 '''
+
+
+
+#Exercício 18
+
+from math import radians, sin, cos, tan
+#importanto apenas as funções que eu preciso 
+
+ângulo = float(input('Digite um ângulo: '))
+
+seno = sin(radians(ângulo))
+print('O ângulo de {:.1f} tem {:.2f}'. format(ângulo, seno))
+
+cosseno = cos(radians(ângulo))
+print('O cosseno de {:.1f} tem {:.2f}'. format(ângulo, cosseno))
+
+tangente = tan(radians(ângulo))
+print('O tangente de {:.1f} tem {:.2f}'. format(ângulo, tangente))
