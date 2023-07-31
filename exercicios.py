@@ -94,11 +94,9 @@
 
 
 
-#Exercício 21
-#TOCANDO UM MP3 - EU NÃO FIZ :(
+# #Exercício 21
+# #TOCANDO UM MP3 - EU NÃO FIZ :(
 
 
 
-#Exercício 22
-
-
+# #Exercício 22
