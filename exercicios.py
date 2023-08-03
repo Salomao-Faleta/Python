@@ -100,3 +100,68 @@
 
 
 # #Exercício 22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#==============================================================================================================
+#Exercícios fora do curso em vídeo - fonte: https://wiki.python.org.br/EstruturaDeDecisao
+
+
+'''
+    1. Faça um Programa que peça dois números e imprima o maior deles.
+
+numero1 = int(input('Digite um número:'))
+numero2 = int(input('Digite um número:'))
+
+if numero1 > numero2:
+    print('{} é maior que número {}'.format(numero1, numero2))
+
+'''
+
+'''
+    2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
+numero = int(input('Digite um valor:'))
+
+if numero >= 0:
+    print('{} é positivo'.format(numero))
+else:
+    print('{} é negativo'.format(numero))
+
+'''
+
+'''
+    3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". 
+    Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+'''
+
+sexo = str(input('Digite seu sexo? M ou F: '))
+
+if sexo == 'F' or sexo == 'f':
+    print('Seu sexo é F - Feminino')
+elif sexo == 'M' or sexo == 'm':
+    print('Seu sexo é M - Masculino')
+else:
+    print('Por favor, digite um sexo válido')
