@@ -101,12 +101,28 @@
 
 # #Exercício 22
 
+nome = input('Digite seu nome: ').strip() # o strip elimina os espaços antes e dps de cada texto
+print('Analisando seu nome...')
 
+print('Seu nome em maiscúlas é {}'.format(nome.upper()))
+print('Seu nome em minuscúlas é {}'.format(nome.lower()))
+print('Seu nome ao todo tem {} letras'.format(len(nome) - nome.count(' ')))
 
+#forma1
+print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
 
+#forma2
+separa = nome.split()
+print('Seu nome é {} e ele tem {} letras'.format(separa[0], len(separa[0])))
 
-
-
+'''
+    Funcções ultilizadas:
+    upper() - Deixa todo o textgo em maiúculas
+    lower() - Deixa todo o textgo em maiúculas
+    len() - retorna o tamando o texto
+    find('alguma coisa') - retorna a posição do que foi passado dentro das aspas 
+    
+'''
 
 
 
@@ -155,7 +171,7 @@ else:
 '''
     3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". 
     Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
-'''
+
 
 sexo = str(input('Digite seu sexo? M ou F: '))
 
@@ -165,3 +181,4 @@ elif sexo == 'M' or sexo == 'm':
     print('Seu sexo é M - Masculino')
 else:
     print('Por favor, digite um sexo válido')
+'''
