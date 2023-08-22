@@ -2,16 +2,21 @@
 
 
 
-# #EXERCICÍO 5
+# #Exercício Python 5: Faça um programa que leia um número Inteiro e mostre na tela o seu sucessor e seu antecessor.
+
 # numero = int(input('Digite um número'))
 # print('O sucessor de {} é {} o antecessor é {}'.format(numero, numero + 1, numero - 1))
 
 
-# #EXERCICÍO 6
+
+# #Exercício Python 06: Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
+
 # numero = int(input('Digite um número'))
 # print('O dobro de {} é {}, o triplo é {} e a raiz quadrada é {:.2f}'.format(numero, numero * 2, numero * 3, numero ** (1/2)))
 
-# #EXERCICÍO 7
+
+
+# #Exercício Python 7: Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média.
 # media1 = float(input('Qual a sua média? '))
 # media2 = float(input('Qual a sua média? '))
 # print('A média entre {} e {} é {}'.format(media1, media2, (media1 + media2) / 2))
@@ -22,14 +27,18 @@
 
 
 
-# #EXERCICÍO 16
+# Exercício Python 16: Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira.
 # import math
 # numero = float(input('Digite um número: '))
 # print('A parte inteira de {} é {}'.format(numero, float(numero)))
 
 
 
-# #EXERCÍCIO 17
+
+# Exercício Python 17: Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo. 
+#Calcule e mostre o comprimento da hipotenusa.
+
+
 # import math
 
 
@@ -48,7 +57,7 @@
 
 
 
-# #Exercício 18
+# Exercício Python 18: Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.
 
 # from math import radians, sin, cos, tan
 # #importanto apenas as funções que eu preciso 
@@ -65,7 +74,10 @@
 # print('O tangente de {:.1f} tem {:.2f}'. format(ângulo, tangente))
 
 
-# #Exercício 19
+
+
+# Exercício Python 19: Um professor quer sortear um dos seus quatro alunos para apagar o quadro. 
+#Faça um programa que ajude ele, lendo o nome dos alunos e escrevendo na tela o nome do escolhido.
 
 # import random
 
@@ -78,7 +90,10 @@
 # print('O aluno escolhido foi: {}'.format(escolhido))
 
 
-# #Execício 20
+
+# Exercício Python 20: O mesmo professor do desafio 19 quer sortear a ordem de apresentação de trabalhos dos alunos. 
+#Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
+
 
 # from random import shuffle
 
@@ -99,21 +114,29 @@
 
 
 
-# #Exercício 22
+'''
+    Exercício Python 22: Crie um programa que leia o nome completo de uma pessoa e mostre:
 
-nome = input('Digite seu nome: ').strip() # o strip elimina os espaços antes e dps de cada texto
-print('Analisando seu nome...')
+    – O nome com todas as letras maiúsculas e minúsculas.
 
-print('Seu nome em maiscúlas é {}'.format(nome.upper()))
-print('Seu nome em minuscúlas é {}'.format(nome.lower()))
-print('Seu nome ao todo tem {} letras'.format(len(nome) - nome.count(' ')))
+    – Quantas letras ao todo (sem considerar espaços).
 
-#forma1
-print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
+    – Quantas letras tem o primeiro nome.
+'''
 
-#forma2
-separa = nome.split()
-print('Seu nome é {} e ele tem {} letras'.format(separa[0], len(separa[0])))
+# nome = input('Digite seu nome: ').strip()
+# print('Analisando seu nome...')
+
+# print('Seu nome em maiscúlas é {}'.format(nome.upper()))
+# print('Seu nome em minuscúlas é {}'.format(nome.lower()))
+# print('Seu nome ao todo tem {} letras'.format(len(nome) - nome.count(' ')))
+
+# #forma1
+# print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
+
+# #forma2
+# separa = nome.split()
+# print('Seu nome é {} e ele tem {} letras'.format(separa[0], len(separa[0])))
 
 '''
     Funcções ultilizadas:
@@ -121,19 +144,79 @@ print('Seu nome é {} e ele tem {} letras'.format(separa[0], len(separa[0])))
     lower() - Deixa todo o textgo em maiúculas
     len() - retorna o tamando o texto
     find('alguma coisa') - retorna a posição do que foi passado dentro das aspas 
+    o strip elimina os espaços antes e dps de cada texto
     
 '''
 
 
 
 
+#Exercício Python 23: Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.
+
+# num = int(input('Informe um número: '))
+# print('Analisando o número {}'.format(num))
+
+# unidade = num // 1 % 10 
+# dezena = num // 10 % 10 
+# centena = num // 100 % 10
+# milhar = num // 1000 % 10
+
+
+# print('Unidade: {}'.format(unidade))
+# print('Dezena: {}'.format(dezena))
+# print('Centena: {}'.format(centena))
+# print('Milhar: {}'.format(milhar))
+
+
+
+
+#Exercício Python 24: Crie um programa que leia o nome de uma cidade diga se ela começa ou não com o nome “SANTO”.
+
+# cidade = input('Em que cidade voçê nasceu? ').strip()
+# print(cidade[:5].upper() == 'SANTO')
 
 
 
 
 
+#Exercício Python 25: Crie um programa que leia o nome de uma pessoa e diga se ela tem “SILVA” no nome.
+
+# nome = input('Qual seu nome completo? ').strip()
+
+# print('Seu nome tem Silva? {}'.format('SILVA' in nome.upper()))
 
 
+
+
+#Exercício Python 26: Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra “A”, 
+# em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
+
+
+# frase = str(input('Digite uma frase: ')).upper().strip()
+# print('A letra A aparece {} vezes na frase'.format(frase.count('A')))
+# print('A primeira letra A apareceu na posição {}'.format(frase.find('A') + 1))
+# print('A última letra A apareceu na posição {}'.format(frase.rfind('A') + 1))
+
+'''
+    FUNÇÕES ULTILIZADAS:
+        count - Conta quantas vezes algo aparece na frase 
+        find - diz a posição onde aparece o que foi passado dentro dos (parênteses)
+        rfind - faz a mesma coisa que o find, porém começando do lado direito
+'''
+
+
+
+#Exercício Python 27: Faça um programa que leia o nome completo de uma pessoa, mostrando em seguida o primeiro e o último nome separadamente.
+
+# n = str(input('Qual seu nome completo? ')).strip()
+# nome = n.split()
+
+# print('Seu primeiro nome é {}'.format(nome[0]))
+# print('Seu último nome é {}'.format(nome[len(nome)-1]))
+
+'''
+    O SPLIT recorta a frase, e podemos pegar cada palvra como array
+'''
 
 
 
