@@ -220,6 +220,82 @@
 
 
 
+    #Exercício Python 28: Escreva um programa que faça o computador “pensar”.     
+#Em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador. 
+#O programa deverá escrever na tela se o usuário venceu ou perdeu.
+
+
+
+# from random import randint
+# from time import sleep
+
+# print('-=-' * 20)
+# print('Vou pensar em um número entre 0 e 5. Tente advinhar...')
+# print('-=-' * 20)
+# computador = randint(0,5)
+
+# Jogador = int(input('Em que número eu pensei?'))
+# print('PROCESSANDO...')
+# sleep(3)
+
+# if Jogador == computador:
+#     print('GANHEI! Eu pensei no número {} e não no número {}!'.format(computador, Jogador))
+# else:
+#     print('VOCÊ PERDEU!!! eu pensei no número {}, você digitou {}'.format(computador, Jogador))
+
+'''
+    FUNÇÕES ULTILIZADAS:
+    randint() - gera um número aleatório
+    sleep() - dar um tempo para iniciar o que vem dps dela
+'''
+
+
+
+#   Exercício Python 29: Escreva um programa que leia a velocidade de um carro. 
+#Se ele ultrapassar 80Km/h, mostre uma mensagem dizendo que ele foi multado. 
+#A multa vai custar R$7,00 por cada Km acima do limite.
+
+# velocidade = int(input('Qual foi a velocidade atual do carro? '))
+
+# multa = (velocidade - 80) * 7
+
+# if velocidade < 80:
+#     print('Tenha um bom dia! E dirija com segurança!')
+# else: 
+#     print('MULTADO! Você exedeu o limite permitido que é de 80 KM/K. Você deve pagar uma multa de R${} reais.'.format(multa))
+
+
+
+#Exercício Python 30: Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
+
+# numero = int(input('Digite um número: '))
+
+# if numero % 2:
+#     print('O número {} é ímpar'.format(numero))
+# else:
+#     print('O número {} é Par'.format(numero))
+
+'''
+    % - Resto da divisão
+    TODO NÚMERO PAR DAR RESULTADO = 0
+    TODO NÚMERO ÍMPAR DAR RESULTADO = 1
+'''
+
+
+
+#Exercício Python 31: Desenvolva um programa que pergunte a distância de uma viagem em Km. 
+# Calcule o preço da passagem, cobrando R$0,50 por Km para viagens de até 200Km e R$0,45 parta viagens mais longas.
+
+# viajem = float(input('Qual a distância da sua viajem ' ))
+# print('Você está prestes a começar uma viajem de {:.1f} km'.format(viajem))
+
+# if viajem < 200:
+#     print('E o preço da sua passagem será de R${:.2f} reais'.format(viajem * 0.50))
+# else:
+#     print('E o preço da sua passagem será de R${:.2f} reias'.format(viajem * 0.45))
+
+
+
 
 
 
