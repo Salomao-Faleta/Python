@@ -311,6 +311,50 @@
 
 
 
+#Exercício Python 33: Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+
+
+# numero1 = int(input('Primeiro valor: '))
+# numero2 = int(input('Segundo valor: '))
+# numero3 = int(input('Terceiro valor: '))
+
+# menor = numero1
+
+# if numero2 < numero1 and numero2 < numero3:
+#     menor =  numero2
+# if numero3 < numero1 and numero3 < numero2:
+#     menor = numero3
+# #verificando quem é o menor número
+# print('O menor número é {}'.format(menor))
+
+
+# #verificando quem é o maior número
+
+# maior = numero1
+
+# if numero2 > numero1 and numero2 > numero3:
+#     maior = numero2
+# if numero3 > numero2 and numero3 > numero2:
+#     maior = numero3
+
+# print('O maior número é {}'.format(maior))
+
+
+
+    #Exercício Python 34: Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento. 
+#Para salários superiores a R$1250,00, calcule um aumento de 10%. Para os inferiores ou iguais, o aumento é de 15%.
+
+# salario = float(input('Quanto você ganha? R$'))
+
+# if salario >= 1250.00:
+#     print('Parabéns! Você teve um aumento de 10% que é R${:.2f}'.format(salario * 110/100))
+# else:
+#     print('Parabés! Você teve um aumento de 15%, que é R${:.2f}'.format(salario * 115/100))
+
+
+
+
+
 
 
 
