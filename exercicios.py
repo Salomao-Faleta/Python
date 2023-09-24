@@ -370,52 +370,26 @@
 # else:
 #     print('Os segmentos NÂO podem formar um triângulo')
 
-
-
-
-
-
-
-
-
-#==============================================================================================================
-#Exercícios fora do curso em vídeo - fonte: https://wiki.python.org.br/EstruturaDeDecisao
-
-
 '''
-    1. Faça um Programa que peça dois números e imprima o maior deles.
-
-numero1 = int(input('Digite um número:'))
-numero2 = int(input('Digite um número:'))
-
-if numero1 > numero2:
-    print('{} é maior que número {}'.format(numero1, numero2))
-
+    Exercício Python 36: Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. 
+    Pergunte o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
+    A prestação mensal não pode exceder 30% do salário ou então o empréstimo será negado.
 '''
 
-'''
-    2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+casa = float(input('Valor da casa: R$'))
+salario = float(input('Salário do comprador: R$'))
+anos = int(input('Em quantos anos de financiamneto? '))
+prestação = casa / (anos * 12)
+minimo = salario * 30 / 100
+print('Para pagar uma casa de R${:.2f} em {} anos a prestação será de R${:.2f}'.format(casa, anos, prestação))
 
-numero = int(input('Digite um valor:'))
-
-if numero >= 0:
-    print('{} é positivo'.format(numero))
+if prestação <= minimo:
+    print('Empréstimo pode ser concedido!')
 else:
-    print('{} é negativo'.format(numero))
-
-'''
-
-'''
-    3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". 
-    Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+    print('Empréstimo NEGADO!')
 
 
-sexo = str(input('Digite seu sexo? M ou F: '))
 
-if sexo == 'F' or sexo == 'f':
-    print('Seu sexo é F - Feminino')
-elif sexo == 'M' or sexo == 'm':
-    print('Seu sexo é M - Masculino')
-else:
-    print('Por favor, digite um sexo válido')
-'''
+
+
+
