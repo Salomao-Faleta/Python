@@ -376,20 +376,62 @@
     A prestação mensal não pode exceder 30% do salário ou então o empréstimo será negado.
 '''
 
-casa = float(input('Valor da casa: R$'))
-salario = float(input('Salário do comprador: R$'))
-anos = int(input('Em quantos anos de financiamneto? '))
-prestação = casa / (anos * 12)
-minimo = salario * 30 / 100
-print('Para pagar uma casa de R${:.2f} em {} anos a prestação será de R${:.2f}'.format(casa, anos, prestação))
+# casa = float(input('Valor da casa: R$'))
+# salario = float(input('Salário do comprador: R$'))
+# anos = int(input('Em quantos anos de financiamneto? '))
+# prestação = casa / (anos * 12)
+# minimo = salario * 30 / 100
+# print('Para pagar uma casa de R${:.2f} em {} anos a prestação será de R${:.2f}'.format(casa, anos, prestação))
 
-if prestação <= minimo:
-    print('Empréstimo pode ser concedido!')
-else:
-    print('Empréstimo NEGADO!')
-
-
+# if prestação <= minimo:
+#     print('Empréstimo pode ser concedido!')
+# else:
+#     print('Empréstimo NEGADO!')
 
 
 
+'''
+Exercício Python 37: Escreva um programa em Python que leia um número inteiro qualquer e peça para o usuário,
+ escolher qual será a base de conversão: 
+1 para binário, 2 para octal e 3 para hexadecimal.
+'''
 
+
+# num = int(input('Digite número inteiro: '))
+# print('''
+# [ 1 ] - Converter para BINÁRIO
+# [ 2 ] - Converter para OCTAL
+# [ 3 ] - Converter para HEXADECIMAL''')
+# opçao = int(input('Sua opção: '))
+
+
+# if opçao == 1:
+#     print('{} convertido para binário é {}'.format(num, bin(num)[2:]))
+# elif opçao == 2:
+#     print('{} convertido para OCTAL é {}'.format(num, oct(num)[2:]))
+# elif opçao == 3:
+#     print('{} convertido para HEXADECIMAL é {}'.format(num, hex(num)[2:]))
+# else:
+#     print('Digite uma opção válida')
+
+
+'''
+Exercício Python 038: Escreva um programa que leia dois números inteiros e compare-os. 
+mostrando na tela uma mensagem:
+
+– O primeiro valor é maior
+
+– O segundo valor é maior
+
+– Não existe valor maior, os dois são iguais
+'''
+
+# numero1 = int(input('Primerio número '))
+# numero2 = int(input('Segundo número '))
+
+# if numero1 > numero2:
+#     print('O primeiro é maior'.format(numero1))
+# elif numero2 > numero1:
+#     print('O Segundo é maior'. format(numero2))
+# else:
+#     print('Não existe valor maior, os dois são iguais')
