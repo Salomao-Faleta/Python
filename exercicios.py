@@ -460,3 +460,27 @@ mostrando na tela uma mensagem:
 # else:
 #     saldo = idade - 18
 #     print('Você já deveria ter se alistado há {} anos'.format(saldo))
+
+'''
+Exercício Python 040: Crie um programa que leia duas notas de um aluno e calcule sua média, 
+mostrando uma mensagem no final, de acordo com a média atingida:
+
+– Média abaixo de 5.0: REPROVADO
+
+– Média entre 5.0 e 6.9: RECUPERAÇÃO
+
+– Média 7.0 ou superior: APROVADO
+
+'''
+
+
+media1 = float(input('Primeira nota: '))
+media2 = float(input('Segunda nota: '))
+resulatdo = (media1 + media2) / 2
+
+if resulatdo < 5:
+    print('A média do aluno foi {}, e ele está REPROVADO!'.format(resulatdo))
+elif resulatdo >= 5 and resulatdo <= 6.9:
+    print('A média do aluno foi {}, e ele está em RECUPERAÇÃO!!'.format(resulatdo))
+else:
+    print('A média do aluno foi {}, e ele foi APROVADO!!!'.format(resulatdo))
