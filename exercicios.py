@@ -473,14 +473,81 @@ mostrando uma mensagem no final, de acordo com a média atingida:
 
 '''
 
+# media1 = float(input('Primeira nota: '))
+# media2 = float(input('Segunda nota: '))
+# resulatdo = (media1 + media2) / 2
 
-media1 = float(input('Primeira nota: '))
-media2 = float(input('Segunda nota: '))
-resulatdo = (media1 + media2) / 2
+# if resulatdo < 5:
+#     print('A média do aluno foi {}, e ele está REPROVADO!'.format(resulatdo))
+# elif resulatdo >= 5 and resulatdo <= 6.9:
+#     print('A média do aluno foi {}, e ele está em RECUPERAÇÃO!!'.format(resulatdo))
+# else:
+#     print('A média do aluno foi {}, e ele foi APROVADO!!!'.format(resulatdo))
 
-if resulatdo < 5:
-    print('A média do aluno foi {}, e ele está REPROVADO!'.format(resulatdo))
-elif resulatdo >= 5 and resulatdo <= 6.9:
-    print('A média do aluno foi {}, e ele está em RECUPERAÇÃO!!'.format(resulatdo))
-else:
-    print('A média do aluno foi {}, e ele foi APROVADO!!!'.format(resulatdo))
+
+'''
+    Exercício Python 041: A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento 
+    de um atleta e mostre sua categoria, de acordo com a idade:
+
+– Até 9 anos: MIRIM
+
+– Até 14 anos: INFANTIL
+
+– Até 19 anos: JÚNIOR
+
+– Até 25 anos: SÊNIOR
+
+– Acima de 25 anos: MASTER
+
+'''
+
+# from datetime import date
+# atual = date.today().year
+
+# nascimento = int(input('Qual seu ano de nascimento? '))
+# idade = atual - nascimento
+# print('O atleta tem {} anos'.format(idade))
+
+# if idade <= 9:
+#     print('Classificação: MIRIM')
+# elif idade > 9 and idade <= 14:
+#     print('Classificação: INFANTIL')
+# elif idade > 14 and idade <= 19:
+#     print('Classificação: JÚNIOR')
+# elif idade > 19 and idade <= 25:
+#     print('Classificação: SÊNIOR')
+# else:
+#     print('Classificação: MASTER')
+
+
+'''
+Exercício Python 42: Refaça o DESAFIO 35 dos triângulos, acrescentando o recurso de mostrar que tipo de 
+triângulo será formado:
+
+– EQUILÁTERO: todos os lados iguais
+
+– ISÓSCELES: dois lados iguais, um diferente
+
+– ESCALENO: todos os lados diferentes
+'''
+
+
+# r1 = float(input('Primeiro Segmento: '))
+# r2 = float(input('Segundo Segmento: '))
+# r3 = float(input('Terceiro Segmento: '))
+
+# if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+#     print('Os segmentos podem formar um triângulo', end=' ')
+
+#     if r1 == r2 and r2 == r3:
+#         print('EQUILÁTERO')
+
+#     elif r1 != r2 and r2 != r3 and r3 != r1:
+#         print('ESCALENO')
+    
+#     else:
+#         print('ISÓLECES')
+
+
+# else:
+#     print('Os segmentos NÂO podem formar um triângulo')
