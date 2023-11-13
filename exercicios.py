@@ -551,3 +551,146 @@ triângulo será formado:
 
 # else:
 #     print('Os segmentos NÂO podem formar um triângulo')
+
+'''
+Exercício Python 43: Desenvolva uma lógica que leia o peso e a altura de uma pessoa, 
+calcule seu Índice de Massa Corporal (IMC) e mostre seu status, de acordo com a tabela abaixo:
+
+– IMC abaixo de 18,5: Abaixo do Peso
+
+– Entre 18,5 e 25: Peso Ideal
+
+– 25 até 30: Sobrepeso
+
+– 30 até 40: Obesidade
+
+– Acima de 40: Obesidade Mórbida
+'''
+
+# peso = float(input('Qual seu peso? (Kg) '))
+# altura = float(input('Qual é sua altura (m)'))
+# # dividimos o peso pela altura ao quadrado
+# imc = peso / (altura ** 2)
+# print('O IMC é de ${:.1f}'.format(imc))
+
+
+# if imc < 18.5:
+#     print('Você está ABAIXO DO PESO')
+# elif imc >= 18.5 and imc < 25:
+#     print('Você está no PESO IDEAL')
+# elif imc >= 25 and imc < 30:
+#     print('Você está em SOBREPESO')
+# elif imc >= 30 and imc < 40:
+#     print('Você está na OBESIDADE')
+# else:
+#     print('Você está na OBESIDADE MÓRBIDA')
+
+
+
+
+'''
+Exercício Python 44: Elabore um programa que calcule o valor a ser pago por um produto, 
+considerando o seu preço normal e condição de pagamento:
+
+– à vista dinheiro/cheque: 10% de desconto
+
+– à vista no cartão: 5% de desconto
+
+– em até 2x no cartão: preço formal 
+
+– 3x ou mais no cartão: 20% de juros
+
+# '''
+
+# valorCompra = float(input('Qual o valor das comprar? R$'))
+# print('FORMAS DE PAGAMENTO')
+# print('[1] - à vista dinheiro/cheque: 10%')
+# print('[2] – à vista no cartão: 5% de desconto')
+# print('[3] - em até 2x no cartão: preço normal')
+# print('[4] – 3x ou mais no cartão: 20% de juros')
+# opcao = int(input('Qual a forma de pagamento?'))
+
+
+# if opcao == 1:
+#     total = valorCompra - (valorCompra * 10 / 100)
+# elif opcao == 2:
+#     total = valorCompra - (valorCompra * 5 / 100)
+# elif opcao == 3:
+#     total = valorCompra
+#     parcela = valorCompra / 2
+#     print('Sua compra foi parcela em 2x de ${:.2f} SEM JUROS'.format(parcela))
+# elif opcao == 4:
+#     total = valorCompra + (valorCompra * 20 / 100)
+#     totalParcelas = int(input('Em quantas parcelas?'))
+#     parcela = total / totalParcelas
+#     print('Sua compra foi parcela de ${}x de ${:.2f} COM JUROS'.format(totalParcelas, parcela))
+# else:
+#     total = 0
+#     print('OPÇÃO INVÁLIDA, TENTE NOVAMENTE')
+
+# print('Sua compra de R$${:.2f} ficou R${:.2f} no final'.format(valorCompra, total))
+
+'''
+    Exercício Python 45: Crie um programa que faça o computador jogar Jokenpô (pedra, papel ou tesoura) com você.
+'''
+
+
+# #fazendo a parte para o computador escolher aleatoriamente
+# from random import randint
+# from time import sleep
+# itens = ('pedra', 'papel', 'tesoura')
+# computador = randint(0,2)
+# # print('o computador escolheu {}'.format(itens[computador])) AQUI SABEMOS OQ O COMPUTADOR ESCOLHEU
+
+# #jogador
+# print('''
+# SUAS OPÇÕES
+# [0] - PEDRA
+# [1] - PAPEL
+# [2] - TESOURA
+# ''')
+
+# jogador = int(input('Qual é sua jogada? '))
+# print('JO')
+# sleep(1)
+# print('KEN')
+# sleep(1)
+# print('PO!!!')
+
+# print('-=' * 20)
+# print('Computador jogou {}'.format(itens[computador]))
+# print('jogador jogou {}'.format(itens[jogador]))
+# print('-=' * 20)
+
+
+# if computador == 0:
+#     if jogador == 0:
+#         print('DEU EMPATE!')
+#     elif jogador == 1:
+#         print('JOGADOR VENCEU!')
+#     elif jogador == 2:
+#         print('COMPUTADOR VENCEU!')
+#     else:
+#         print('Jogada inválida')
+
+# elif computador == 1:
+#     if jogador == 0:
+#         print('COMPUTADOR VENCEU')
+#     elif jogador == 1:
+#         print('DEU EMPATE!')
+#     elif jogador == 2:
+#         print('JOGADOR VENCEU!')
+#     else:
+#         print('Jogada inválida')
+
+
+# elif computador == 2:
+#     if jogador == 0:
+#         print('JOGADOR VENCEU!')
+#     elif jogador == 1:
+#         print('COMPUTADOR VENCEU!')
+#     elif jogador == 2:
+#         print('DEU EMPATE!')
+#     else:
+#         print('Jogada inválida')
+
