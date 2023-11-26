@@ -694,3 +694,23 @@ considerando o seu preço normal e condição de pagamento:
 #     else:
 #         print('Jogada inválida')
 
+'''
+Exercício Python 46: Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de 
+artifício, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
+'''
+
+# from time import sleep
+
+# for c in range(10, -1, -1):
+#     print(c)
+#     sleep(1)
+# print('FELIZZ ANO NOVOOO!!!')
+
+
+'''
+Exercício Python 47: Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.
+'''
+
+for i in range(2, 51, 2):
+    print(i)
+print('fim')
