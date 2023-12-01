@@ -707,7 +707,7 @@ artifício, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
 # print('FELIZZ ANO NOVOOO!!!')
 
 
-'''
+f'''
 Exercício Python 47: Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.
 '''
 
