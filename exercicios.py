@@ -707,10 +707,64 @@ artifício, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
 # print('FELIZZ ANO NOVOOO!!!')
 
 
-f'''
+'''
 Exercício Python 47: Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.
 '''
 
-for i in range(2, 51, 2):
-    print(i)
-print('fim')
+# for i in range(2, 51, 2):
+#     print(i)
+# print('fim')
+
+'''
+    Exercício Python 48: Faça um programa que calcule a soma entre todos os números 
+    que são múltiplos de três e que se encontram no intervalo de 1 até 500.
+'''
+
+# soma = 0
+# for i in range(1,501, 2):
+#     if i % 3 == 0:
+#         soma += i
+# print('A soma dos números solicitados é {}'.format(soma))
+
+
+'''
+    Exercício Python 49: Refaça o DESAFIO 9,
+    mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for.
+'''
+
+# numero = int(input('Digite um número para ver sau tabuada: '))
+
+# for i in range(1, 11):
+#     print('{} x {} = {}'.format(numero, i, numero * i))
+
+
+'''
+    Exercício Python 50: Desenvolva um programa que leia seis números inteiros e mostre a soma apenas 
+    daqueles que forem pares. Se o valor digitado for ímpar, desconsidere-o.
+'''
+
+# soma = 0
+# cont = 0
+# for i in range(1,7):
+#     numero = int(input('Digite o {}° valor: '.format(i)))
+#     if numero % 2 == 0:
+#         soma += numero
+#         cont += 1
+# print('Você informou {} números pares e a soma foi {}' .format(cont, soma))
+
+
+
+'''
+    Exercício Python 51: Desenvolva um programa que leia o primeiro termo e a razão de uma PA.
+    No final, mostre os 10 primeiros termos dessa progressão.
+'''
+
+print('=' * 20)
+print(' 10 termos de uma PA')
+print('=' * 20)
+
+primeiroTermo = int(input('Primeiro termo: '))
+razao = int(input('Qual a razão? '))
+
+for i in range(1, 11, razao):
+    print(primeiroTermo)
