@@ -759,12 +759,35 @@ Exercício Python 47: Crie um programa que mostre na tela todos os números pare
     No final, mostre os 10 primeiros termos dessa progressão.
 '''
 
-print('=' * 20)
-print(' 10 termos de uma PA')
-print('=' * 20)
+# print('=' * 20)
+# print(' 10 termos de uma PA')
+# print('=' * 20)
 
-primeiroTermo = int(input('Primeiro termo: '))
-razao = int(input('Qual a razão? '))
+# primeiroTermo = int(input('Primeiro termo: '))
+# razao = int(input('Qual a razão? '))
+# decimo = primeiroTermo + (11 - 1) * razao
 
-for i in range(1, 11, razao):
-    print(primeiroTermo)
+# for i in range(primeiroTermo, decimo, razao):
+#     print(i)
+# print('Acabou')
+
+'''
+    Exercício Python 52: Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
+'''
+
+num = int(input('Digite um número: '))
+tot = 0
+
+for i in range(1, num + 1):
+    if num % i == 0:
+        print('\033[33m', end="")
+        tot += 1
+    else:
+         print('\033[31m', end=" ")
+    print('{}'.format(i), end=" ")
+print('o numero {} foi divisível {} vezes'.format(num, tot))
+
+if tot == 2:
+    print('Por isso ele é primo')
+else: 
+    print('Por isso ele não é Primo')
