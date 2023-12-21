@@ -775,19 +775,39 @@ Exercício Python 47: Crie um programa que mostre na tela todos os números pare
     Exercício Python 52: Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
 '''
 
-num = int(input('Digite um número: '))
-tot = 0
+# num = int(input('Digite um número: '))
+# tot = 0
 
-for i in range(1, num + 1):
-    if num % i == 0:
-        print('\033[33m', end="")
-        tot += 1
-    else:
-         print('\033[31m', end=" ")
-    print('{}'.format(i), end=" ")
-print('o numero {} foi divisível {} vezes'.format(num, tot))
+# for i in range(1, num + 1):
+#     if num % i == 0:
+#         print('\033[33m', end="")
+#         tot += 1
+#     else:
+#          print('\033[31m', end=" ")
+#     print('{}'.format(i), end=" ")
+# print('o numero {} foi divisível {} vezes'.format(num, tot))
 
-if tot == 2:
-    print('Por isso ele é primo')
-else: 
-    print('Por isso ele não é Primo')
+# if tot == 2:
+#     print('Por isso ele é primo')
+# else: 
+#     print('Por isso ele não é Primo')
+
+
+'''
+Exercício Python 53: Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, 
+desconsiderando os espaços. Exemplos de palíndromos:
+    => APOS A SOPA, A SACADA DA CASA, A TORRE DA DERROTA, O LOBO AMA O BOLO, ANOTARAM A DATA DA MARATONA.
+'''
+
+# frase = str(input('Digite uma frase: ')).strip().upper()
+# palavras = frase.split()
+# junto = ''.join(palavras)
+# inverso = ''
+
+# for letra in range(len(junto) - 1, -1, -1):
+#     inverso += junto[letra]
+# print('O inverso de {} é {}'.format(junto, inverso))
+# if inverso == junto:
+#     print('Tempos um palímodro')
+# else:
+#     print('Não temos um palímodro')
