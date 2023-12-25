@@ -811,3 +811,79 @@ desconsiderando os espaços. Exemplos de palíndromos:
 #     print('Tempos um palímodro')
 # else:
 #     print('Não temos um palímodro')
+
+
+'''
+    Exercício Python 54: Crie um programa que leia o ano de nascimento de sete pessoas. 
+    No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+'''
+# from datetime import date
+# atual = date.today().year
+# totMaior = 0
+# totMenor = 0
+
+# for pes in range(1,8):
+#     nasc = int(input('Em que ano a {}° pessoa nasceu? '.format(pes)))
+#     idade = atual - nasc
+#     if idade >= 18:
+#         totMaior+=1
+#     else:
+#         totMenor+= 1
+# print('Ao todo tivemos {} pessoas maiores de idade'.format(totMaior))
+# print('Ao todo tivemos {} pessoas menores de idade'.format(totMenor))
+
+
+'''
+    Exercício Python 55: Faça um programa que leia o peso de cinco pessoas. 
+    No final, mostre qual foi o maior e o menor peso lidos.
+'''
+
+# maiorPeso = 0
+# menorPeso = 0
+
+# for p in range(1,6):
+#     peso = float(input('Qual é o peso da {}° pessoa? '.format(p)))
+#     if p == 1:
+#         maiorPeso = peso
+#         menorPeso = peso
+#     else:
+#         if peso > maiorPeso:
+#             maiorPeso = peso
+#         if peso < menorPeso:
+#             menorPeso = peso
+# print('O maior peso lido foi {}kg'.format(maiorPeso))
+# print('O menor peso lido foi {}kg'.format(menorPeso))
+
+'''
+    Exercício Python 56: Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, 
+    mostre: a média de idade do grupo, qual é o nome do homem mais velho e quantas mulheres têm menos de 20 anos.
+'''
+
+# somaIdade = 0
+# mediaIdade = 0
+# maiorIdadeHomem = 0
+# nomeVelho = ''
+# Mulher20 = 0
+
+# for p in range(1,5):
+#     print('----- {}° PESSOA -----'.format(p))
+#     nome = str(input('Nome: ')).strip()
+#     idade = int(input('Idade: '))
+#     sexo = str(input('Sexo: [M/F]: ')).strip()
+
+#     somaIdade += idade
+
+
+#     if p == 1 and sexo in 'Mm':
+#         maiorIdadeHomem = idade
+#         nomeVelho = nome
+#     if sexo in 'Mn' and idade > maiorIdadeHomem:
+#         maiorIdadeHomem = idade
+#         nomeVelho = nome
+#     if sexo in 'Ff' and idade < 20:
+#         Mulher20 += 1
+
+# mediaIdade = somaIdade / 4
+# print('A média do grupo é de {} anos'.format(mediaIdade))
+# print('O homem mais velo tem {} anos e se chama {}'.format(maiorIdadeHomem, nomeVelho))
+# print('{} mulheres tem menos de 20 anos'.format(Mulher20))
