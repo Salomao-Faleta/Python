@@ -887,3 +887,99 @@ desconsiderando os espaços. Exemplos de palíndromos:
 # print('A média do grupo é de {} anos'.format(mediaIdade))
 # print('O homem mais velo tem {} anos e se chama {}'.format(maiorIdadeHomem, nomeVelho))
 # print('{} mulheres tem menos de 20 anos'.format(Mulher20))
+
+
+'''
+    Exercício Python 57: Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores "M" ou "F".
+    Caso esteja errado, peça a digitação novamente até ter um valor correto.
+'''
+
+# sexo = input('Qual seu sexo? [M/F]').upper()
+
+# while sexo not in 'MF':
+#     print('Digite um sexo VÁLIDO!')
+#     print('================================')
+#     sexo = input('Qual seu sexo? [M/F]').upper()
+    
+# print('Obrigado! seu sexo é {}'.format(sexo))
+
+'''
+    Exercício Python 58: Melhore o jogo do DESAFIO 28 onde o computador vai “pensar” em um número entre 0 e 10. 
+    Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram 
+    necessários para vencer.
+'''
+
+# from random import randint
+
+# nome = input('Qual seu nome: ').strip()
+
+# computador = randint(0, 11)
+# jogador = int(input('Olá {}! Em que número eu pensei?'))
+# totVez = 1
+
+# while jogador != computador:
+#     print('ERROU! TENTE NOVAMENET')
+#     totVez += 1
+
+#     if jogador > computador:
+#         print('Experimente um número menor')
+#     else:
+#         print('Experimente um número maior')
+    
+#     print('=' * 20)
+
+#     jogador = int(input('Em que númerov eu pensei?'))
+# print('Parabéns! você precisou de {} chances para acertar'.format(totVez))
+
+
+'''
+    Exercício Python 059: Crie um programa que leia dois valores e mostre um menu na tela:
+
+[ 1 ] somar
+
+[ 2 ] multiplicar
+
+[ 3 ] maior
+
+[ 4 ] novos números
+
+[ 5 ] sair do programa
+
+Seu programa deverá realizar a operação solicitada em cada caso.
+'''
+from time import sleep
+
+n1 = int(input('Digite o 1° número '))
+n2 = int(input('Digite o 2° número '))
+opcao = 0
+
+while opcao != 5:
+    print('''
+    [ 1 ] somar
+    [ 2 ] multiplicar
+    [ 3 ] maior
+    [ 4 ] novos números
+    [ 5 ] sair do programa''')
+    opcao = int(input('>>>>>>>>>>>>O que deseja fazer com os valores? '))
+
+    if opcao == 1:
+        print('A soma entre {} e {} é {}'.format(n1, n2, n1+n2))
+    elif opcao == 2:
+        print('A multiplicação entre {} e {} é {}'.format(n1, n2, n1 * n2))
+    elif opcao == 3:
+        if n1 > n2:
+            print('Entre {} e {} o {} é maior'.format(n1, n2, n1))
+        else:
+            print('Entre {} e {} o {} é maior'.format(n2, n1, n2))
+    elif opcao == 4:
+        print('Os novos númeos')
+        n1 = int(input('Digite o 1° valor: '))
+        n2 = int(input('Digite o 2° valor: '))
+    elif opcao == 5:
+        print('Finalizando...')
+        sleep(2)
+    else:
+        print('Digite um valor válido')
+
+
+print('Volte sempre!')
