@@ -947,39 +947,118 @@ desconsiderando os espaços. Exemplos de palíndromos:
 
 Seu programa deverá realizar a operação solicitada em cada caso.
 '''
-from time import sleep
+# from time import sleep
 
-n1 = int(input('Digite o 1° número '))
-n2 = int(input('Digite o 2° número '))
-opcao = 0
+# n1 = int(input('Digite o 1° número '))
+# n2 = int(input('Digite o 2° número '))
+# opcao = 0
 
-while opcao != 5:
-    print('''
-    [ 1 ] somar
-    [ 2 ] multiplicar
-    [ 3 ] maior
-    [ 4 ] novos números
-    [ 5 ] sair do programa''')
-    opcao = int(input('>>>>>>>>>>>>O que deseja fazer com os valores? '))
+# while opcao != 5:
+#     print('''
+#     [ 1 ] somar
+#     [ 2 ] multiplicar
+#     [ 3 ] maior
+#     [ 4 ] novos números
+#     [ 5 ] sair do programa''')
+#     opcao = int(input('>>>>>>>>>>>>O que deseja fazer com os valores? '))
 
-    if opcao == 1:
-        print('A soma entre {} e {} é {}'.format(n1, n2, n1+n2))
-    elif opcao == 2:
-        print('A multiplicação entre {} e {} é {}'.format(n1, n2, n1 * n2))
-    elif opcao == 3:
-        if n1 > n2:
-            print('Entre {} e {} o {} é maior'.format(n1, n2, n1))
-        else:
-            print('Entre {} e {} o {} é maior'.format(n2, n1, n2))
-    elif opcao == 4:
-        print('Os novos númeos')
-        n1 = int(input('Digite o 1° valor: '))
-        n2 = int(input('Digite o 2° valor: '))
-    elif opcao == 5:
-        print('Finalizando...')
-        sleep(2)
-    else:
-        print('Digite um valor válido')
+#     if opcao == 1:
+#         print('A soma entre {} e {} é {}'.format(n1, n2, n1+n2))
+#     elif opcao == 2:
+#         print('A multiplicação entre {} e {} é {}'.format(n1, n2, n1 * n2))
+#     elif opcao == 3:
+#         if n1 > n2:
+#             print('Entre {} e {} o {} é maior'.format(n1, n2, n1))
+#         else:
+#             print('Entre {} e {} o {} é maior'.format(n2, n1, n2))
+#     elif opcao == 4:
+#         print('Os novos númeos')
+#         n1 = int(input('Digite o 1° valor: '))
+#         n2 = int(input('Digite o 2° valor: '))
+#     elif opcao == 5:
+#         print('Finalizando...')
+#         sleep(2)
+#     else:
+#         print('Digite um valor válido')
 
 
-print('Volte sempre!')
+# print('Volte sempre!')
+
+'''
+Exercício Python 060: Faça um programa que leia um número qualquer e mostre o seu fatorial.
+Exemplo: 5! = 5 x 4 x 3 x 2 x 1 = 120
+'''
+
+#1° forma de fazer
+# from math import factorial
+# n = int(input('Digite um número para calcular o fatorial'))
+# f = factorial(n)
+# print('O factorial de {} é {}'.format(n, f))
+
+
+#2° Forma de fazer
+# n = int(input('Digite um número para calcular o fatorial'))
+# c = n
+# f = 1
+# print('calculando {}'.format(n))
+# while c > 0:
+#     print(' {} '.format(c), end="")
+#     print('x' if c > 1 else ' = ', end="")
+#     f *= c
+#     c -= 1
+# print('{}'.format(f))
+
+
+'''
+Exercício Python 61: Refaça o DESAFIO 51, lendo o primeiro termo e a razão de uma PA, 
+mostrando os 10 primeiros termos da progressão usando a estrutura while.
+'''
+
+
+# print('=' * 20)
+# print(' 10 termos de uma PA')
+# print('=' * 20)
+
+# primeiroTermo = int(input('Primeiro termo: '))
+# razao = int(input('Qual a razão? '))
+# termo = primeiroTermo
+# cont = 1
+
+# while cont < 11:
+#     print('{} => '.format(termo), end="")
+#     termo += razao
+#     cont += 1
+# print('FIM')
+
+
+'''
+    Exercício Python 62: Melhore o DESAFIO 61, perguntando para o usuário se ele quer mostrar mais alguns termos. 
+    O programa encerrará quando ele disser que quer mostrar 0 termos.
+'''
+
+
+
+print('=' * 20)
+print(' 10 termos de uma PA')
+print('=' * 20)
+
+primeiroTermo = int(input('Primeiro termo: '))
+razao = int(input('Qual a razão? '))
+termo = primeiroTermo
+cont = 1
+total = 0
+mais = 10
+
+while mais != 0:
+    total += mais
+    while cont <= total:
+        print('{} => '.format(termo), end="")
+        termo += razao
+        cont += 1
+    print('PAUSA')
+    mais = int(input('Quantos termos você quer mostrar a mais? '))
+print('FIM!')
+
+
+
+
