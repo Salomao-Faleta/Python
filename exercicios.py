@@ -1036,29 +1036,70 @@ mostrando os 10 primeiros termos da progressão usando a estrutura while.
     O programa encerrará quando ele disser que quer mostrar 0 termos.
 '''
 
+# print('=' * 20)
+# print(' 10 termos de uma PA')
+# print('=' * 20)
+
+# primeiroTermo = int(input('Primeiro termo: '))
+# razao = int(input('Qual a razão? '))
+# termo = primeiroTermo
+# cont = 1
+# total = 0
+# mais = 10
+
+# while mais != 0:
+#     total += mais
+#     while cont <= total:
+#         print('{} => '.format(termo), end="")
+#         termo += razao
+#         cont += 1
+#     print('PAUSA')
+#     mais = int(input('Quantos termos você quer mostrar a mais? '))
+# print('FIM!')
 
 
-print('=' * 20)
-print(' 10 termos de uma PA')
-print('=' * 20)
+'''
+    Exercício Python 63: Escreva um programa que leia um número N inteiro qualquer e mostre na tela os N primeiros
+    elementos de uma Sequência de Fibonacci. Exemplo: 0 – 1 – 1 – 2 – 3 – 5 – 8
+'''
 
-primeiroTermo = int(input('Primeiro termo: '))
-razao = int(input('Qual a razão? '))
-termo = primeiroTermo
-cont = 1
-total = 0
-mais = 10
+# print('-'* 30)
+# print('Sequência de Fibonacci.')
+# print('-'* 30)
 
-while mais != 0:
-    total += mais
-    while cont <= total:
-        print('{} => '.format(termo), end="")
-        termo += razao
-        cont += 1
-    print('PAUSA')
-    mais = int(input('Quantos termos você quer mostrar a mais? '))
-print('FIM!')
+# n = int(input('Quantos termos voçê quer mostrar? '))
 
+# t1 = 0
+# t2 = 1
+# print('~'*30)
+# print('{} => {}'.format(t1, t2), end="")
+# cont = 3
+# while cont <= n:
+#     t3 = t1 + t2
+#     print(' => {}'.format(t3), end="")
+#     t1 = t2
+#     t2 = t3
+#     cont += 1
+# print('=> FIM!')
+# print('~'*30)
+
+'''
+    Exercício Python 64: Crie um programa que leia vários números inteiros pelo teclado. 
+    O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final,
+    mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag).
+'''
+
+# n = 0
+# cont = 0
+# soma = 0
+# n = int(input('Digite um número: [999 para parar] '))
+
+# while n != 999:
+#     soma += n
+#     cont += 1
+#     n = int(input('Digite um número: [999 para parar] '))
+# print('Você digitou {} números e a soma deles foram {}'.format(cont, soma))
+# print('ACABOU!')
 
 
 
