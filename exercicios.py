@@ -1168,3 +1168,110 @@ No final, mostre quantos números foram digitados e qual foi a soma entre elas (
 #         print('NÃO ACEITAMNOS NÚMEROS NEGATIVOS')
 #         break
 # print('===>SAIU DO LAÇO<===')
+
+
+'''
+    Exercício Python 68: Faça um programa que jogue par ou ímpar com o computador. 
+    O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele 
+    conquistou no final do jogo.
+'''
+# FAZER
+
+
+
+'''
+Exercício Python 69: Crie um programa que leia a idade e o sexo de várias pessoas.
+A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. No final, mostre:
+
+A) quantas pessoas tem mais de 18 anos.
+
+B) quantos homens foram cadastrados.
+
+C) quantas mulheres tem menos de 20 anos.
+
+'''
+
+# maiorIdade = 0
+# homemCadastrado = 0
+# mulherMenos20 = 0
+
+
+# while True:     
+#     print('='*30)
+#     print('CADASTRE UMA PESSOA')
+#     print('='*30)
+
+
+#     idade = int(input('Qual a idade da pessoa? '))
+#     sexo = str(input('Qual o sexo da pessoa? [M/F]')).strip().upper()[0]
+
+#     print('-'*30)
+
+#     if idade > 18:
+#         maiorIdade += 1
+    
+#     if sexo == 'M':
+#         homemCadastrado += 1
+
+#     if idade < 20 and sexo == 'F':
+#         mulherMenos20 += 1
+
+#     pergunta = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+#     if pergunta == 'N':
+#         break
+
+
+# print(f'Total de pessoas com mais de 18 anos: {maiorIdade}')
+# print(f'Total de homens cadastrados: {homemCadastrado}')
+# print(f'E temos {mulherMenos20} mulher com menos de 20 anos.')
+
+
+
+'''
+Exercício Python 70: Crie um programa que leia o nome e o preço de vários produtos. 
+O programa deverá perguntar se o usuário vai continuar ou não. No final, mostre:
+
+A) qual é o total gasto na compra.
+
+B) quantos produtos custam mais de R$1000.
+
+C) qual é o nome do produto mais barato.
+'''
+
+totCompra = 0
+produtoMaisMil = 0
+produtoMaisBarato = 0
+menor = cont = 0
+
+
+
+while True:
+    nomeProduto = str(input('Digite o nome do produto: '))
+    precoProduto = float(input('Preço: R$'))
+    cont += 1
+
+
+    totCompra += precoProduto
+
+    if precoProduto > 1000:
+        produtoMaisMil += 1
+
+    if cont == 1:
+        menor = precoProduto
+        produtoMaisBarato = nomeProduto
+    else:
+        if precoProduto < menor:
+            menor = precoProduto
+            produtoMaisBarato = nomeProduto
+
+    
+
+
+    pergunta = str(input('Deseja continuar? [S/N]')).strip().upper()[0]
+    if pergunta == 'N':
+        break
+
+print('----------------------FIM DO PROGRAMA----------------------')
+print('O total da compra foi: R${}'.format(totCompra))
+print('Temos {} produto mais de R$1000 reais'.format(produtoMaisMil))
+print('O produto mais barato é {} e custa {:.2f}'.format(produtoMaisBarato, menor))
