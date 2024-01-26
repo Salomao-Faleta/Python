@@ -732,7 +732,7 @@ Exercício Python 47: Crie um programa que mostre na tela todos os números pare
     mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for.
 '''
 
-# numero = int(input('Digite um número para ver sau tabuada: '))
+# numero = int(input('Digite um número para ver sua tabuada: '))
 
 # for i in range(1, 11):
 #     print('{} x {} = {}'.format(numero, i, numero * i))
@@ -1129,3 +1129,42 @@ mostrando os 10 primeiros termos da progressão usando a estrutura while.
 # media = soma / quant
 # print('Você digitou {} números e a média dos número foi {}'.format(quant, media))
 # print('O maior foi {} e o menor foi {}'. format(maior, menor))
+
+
+'''
+    Exercício Python 66: Crie um programa que leia números inteiros pelo teclado. 
+O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada.
+No final, mostre quantos números foram digitados e qual foi a soma entre elas (desconsiderando o flag).
+
+'''
+
+# numero = int(input('Digite um número (999 para parar): '))
+# soma = 0
+# num_digitado = 0
+
+# while numero != 999:
+#     soma += numero
+#     num_digitado += 1
+#     numero = int(input('Digite um número (999 para parar): '))
+# print(f'A soma dos números é {soma} e vc digitou {num_digitado} números')
+
+
+'''
+    Exercício Python 67: Faça um programa que mostre a tabuada de vários números, um de cada vez, 
+    para cada valor digitado pelo usuário. 
+    O programa será interrompido quando o número solicitado for negativo.
+'''
+
+
+# while True:
+#     print('='*50)
+#     numero = int(input('quer ver a tabuada de que valor? '))
+    
+#     if numero > 0:
+#         for i in range(1, 11):
+#             print('{} x {} = {}'.format(numero, i, numero * i))
+    
+#     else:
+#         print('NÃO ACEITAMNOS NÚMEROS NEGATIVOS')
+#         break
+# print('===>SAIU DO LAÇO<===')
