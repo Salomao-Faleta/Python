@@ -1240,7 +1240,7 @@ C) qual é o nome do produto mais barato.
 
 totCompra = 0
 produtoMaisMil = 0
-produtoMaisBarato = 0
+# produtoMaisBarato = 0
 menor = cont = 0
 
 
