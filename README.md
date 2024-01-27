@@ -5,3 +5,4 @@
  <img align="center" alt="javascript" height="80" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 
  
+## A prática leva a perfeição. Com isso, todos os exercícios do Python vou fazer também no javaScript, além de praticar nas duas linguans vou desenvolver a lógica nesses exercícios.
