@@ -1175,8 +1175,38 @@ No final, mostre quantos números foram digitados e qual foi a soma entre elas (
     O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele 
     conquistou no final do jogo.
 '''
-# FAZER
 
+
+# from random import randint
+# vitoria = 0
+
+# while True:
+#     jogador = int(input('Diga um valor: '))
+#     computador = randint(0, 10)
+#     total = jogador + computador
+#     tipo = ' '
+#     while tipo not in 'PI':
+#         tipo = str(input('Par ou Ímpar? [P/I]')).upper().strip()[0]
+#     print(f'jogador jogou {jogador} e computador {computador} total deu {total}')
+
+#     if tipo == 'P':
+#         if total % 2 == 0:
+#             print('VOCÊ VENCEU')
+#             vitoria += 1
+#         else:
+#             print('VOCÊ PERDEU')
+#             break
+#     elif tipo == 'I':
+#         if total % 2 == 1:
+#             print('VOCÊ VENCEU')
+#             vitoria += 1
+#         else:
+#             print('VOCÊ PERDEU')
+#             break
+#     print('vamos jogar novamente...')
+
+# print('GAME OVER!')
+# print('Você venceu {} vezes'.format(vitoria))
 
 
 '''
@@ -1238,40 +1268,45 @@ B) quantos produtos custam mais de R$1000.
 C) qual é o nome do produto mais barato.
 '''
 
-totCompra = 0
-produtoMaisMil = 0
-# produtoMaisBarato = 0
-menor = cont = 0
+# totCompra = 0
+# produtoMaisMil = 0
+# # produtoMaisBarato = 0
+# menor = cont = 0
 
 
 
-while True:
-    nomeProduto = str(input('Digite o nome do produto: '))
-    precoProduto = float(input('Preço: R$'))
-    cont += 1
+# while True:
+#     nomeProduto = str(input('Digite o nome do produto: '))
+#     precoProduto = float(input('Preço: R$'))
+#     cont += 1
 
 
-    totCompra += precoProduto
+#     totCompra += precoProduto
 
-    if precoProduto > 1000:
-        produtoMaisMil += 1
+#     if precoProduto > 1000:
+#         produtoMaisMil += 1
 
-    if cont == 1:
-        menor = precoProduto
-        produtoMaisBarato = nomeProduto
-    else:
-        if precoProduto < menor:
-            menor = precoProduto
-            produtoMaisBarato = nomeProduto
+#     if cont == 1:
+#         menor = precoProduto
+#         produtoMaisBarato = nomeProduto
+#     else:
+#         if precoProduto < menor:
+#             menor = precoProduto
+#             produtoMaisBarato = nomeProduto
 
     
 
 
-    pergunta = str(input('Deseja continuar? [S/N]')).strip().upper()[0]
-    if pergunta == 'N':
-        break
+#     pergunta = str(input('Deseja continuar? [S/N]')).strip().upper()[0]
+#     if pergunta == 'N':
+#         break
 
-print('----------------------FIM DO PROGRAMA----------------------')
-print('O total da compra foi: R${}'.format(totCompra))
-print('Temos {} produto mais de R$1000 reais'.format(produtoMaisMil))
-print('O produto mais barato é {} e custa {:.2f}'.format(produtoMaisBarato, menor))
+# print('----------------------FIM DO PROGRAMA----------------------')
+# print('O total da compra foi: R${}'.format(totCompra))
+# print('Temos {} produto mais de R$1000 reais'.format(produtoMaisMil))
+# print('O produto mais barato é {} e custa {:.2f}'.format(produtoMaisBarato, menor))
+
+
+
+
+

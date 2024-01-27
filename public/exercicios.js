@@ -45,11 +45,42 @@
 
 
 
+// Exercício Python 68: Faça um programa que jogue par ou ímpar com o computador. 
+// O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele 
+// conquistou no final do jogo.
 
+// let vitoria = 0;
 
+// while(true){
+//     let jogador = Number(prompt('Digite um número '));
+//     let compuatdor = Math.floor(Math.random() * 10);
+//     let total = jogador + compuatdor;
+//     let tipo = prompt('PAR OU ÍMPAR? ').toUpperCase().charAt(0);
 
+//     if(tipo == 'P'){
+//         if(total % 2 == 0){
+//             alert('VOCÊ GANHOU');
+//             alert(`vc jogou ${jogador} computador ${compuatdor} = ${total}`)
+//             vitoria+=1;
+//         }else{
+//             alert('VOCÊ PEDEU')
+//             alert(`vc jogou ${jogador} computador ${compuatdor} = ${total}`)
+//             break;
+//         }
+//     }else if(tipo == 'I'){
+//         if(total % 2 == 1){
+//             alert('VOCÊ VENCEU');
+//             alert(`vc jogou ${jogador} computador ${compuatdor} = ${total}`)
+//             vitoria+=1;
+//         }else{
+//             alert('VOCÊ PERDEU');
+//             alert(`vc jogou ${jogador} computador ${compuatdor} = ${total}`)
+//             break;
+//         }
+//     }
+// }
 
-
+// console.log(`você jogou ${vitoria} vezes`)
 
 
 
