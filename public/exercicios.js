@@ -1,4 +1,72 @@
-// Exercício JS 66: Crie um programa que leia números inteiros pelo teclado. 
+/*
+    Exercício Python 64: Crie um programa que leia vários números inteiros pelo teclado. 
+    O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final,
+    mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag).
+*/
+
+// let num_digitado = soma = 0;
+// let numero = Number(prompt('Digite um número [999 PARA PARAR]'));
+
+// while(numero != 999){
+    
+//     soma+=numero;
+//     num_digitado++;
+    
+//     numero = Number(prompt('Digite um número [999 PARA PARAR]'));
+// }
+
+// console.log(`Números digitados: ${num_digitado}`)
+// console.log(`A soma dos números deu ${soma}`)
+
+
+
+
+/*
+    Exercício Python 65: Crie um programa que leia vários números inteiros pelo teclado.
+    No final da execução, mostre a média entre todos os valores e qual foi o maior e o menor valores lidos.
+    O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
+*/
+
+//todas as variaveis terão o valor 0 (zero)
+
+// let media = quant = soma = maiorNum = menorNum = 0;
+
+// while(true){
+//     let numero = Number(prompt('Digite um número'));
+
+//     soma += numero;
+//     quant++;
+//     media = soma / quant;
+
+//     if(quant == 1){
+//         maiorNum = menorNum = numero;
+//     }else{
+//         if(numero > maiorNum){
+//             maiorNum = numero
+//         }
+
+//         if(numero < menorNum){
+//             menorNum = numero
+//         }
+//     }
+    
+//     let pergunta = prompt('Deseja continuar? [S/N]').charAt(0).toUpperCase();
+//     if(pergunta == 'N'){
+//         break;
+//     }
+
+// }
+
+// console.log(`a soma dos numeros foi: ${soma}`)
+// console.log(`vezes: ${quant}`)
+// console.log(`a media foi ${media.toFixed(2)}`)
+// console.log(`O maior núemro foi: ${maiorNum}`)
+// console.log(`O menor núemro foi: ${menorNum}`)
+
+
+
+
+// Exercício JS 66: Crie um programa que leia números inteiros pelo teclado.
 // O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada.
 // No final, mostre quantos números foram digitados e qual foi a soma entre elas (desconsiderando o flag).
 
@@ -20,8 +88,8 @@
 
 
 
-// Exercício JS 67: Faça um programa que mostre a tabuada de vários números, um de cada vez, 
-// para cada valor digitado pelo usuário. 
+// Exercício JS 67: Faça um programa que mostre a tabuada de vários números, um de cada vez,
+// para cada valor digitado pelo usuário.
 // O programa será interrompido quando o número solicitado for negativo.
 
 
@@ -43,8 +111,8 @@
 
 
 
-// Exercício JS 68: Faça um programa que jogue par ou ímpar com o computador. 
-// O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele 
+// Exercício JS 68: Faça um programa que jogue par ou ímpar com o computador.
+// O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele
 // conquistou no final do jogo.
 
 // let vitoria = 0;
@@ -130,7 +198,7 @@
 
 
 
-// Exercício JS 70: Crie um programa que leia o nome e o preço de vários produtos. 
+// Exercício JS 70: Crie um programa que leia o nome e o preço de vários produtos.
 // O programa deverá perguntar se o usuário vai continuar ou não. No final, mostre:
 
 // A) qual é o total gasto na compra.
