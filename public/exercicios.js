@@ -1,3 +1,27 @@
+//Exercício Python 5: Faça um programa que leia um número Inteiro e mostre na tela o seu sucessor e seu antecessor.
+
+// let numero = Number(promptp("Digite um número:"))
+// console.log(`O antecessor de ${numero} é ${numero - 1}`);
+// console.log(`O sucessor de ${numero} é ${numero + 1}`);
+
+
+// Exercício Python 06: Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
+
+// let numero = Number(prompt("Digite um número"))
+// console.log(`O dobro de ${numero} é ${numero * 2}`)
+// console.log(`O triplo de ${numero} é ${numero * 3}`)
+// console.log(`A raiz quadrada de ${numero} é ${numero ** (1/2).toFixed(2)}`)
+
+
+// Exercício Python 7: Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média.
+
+// let nota1 = Number(prompt("Digte a nota 1"))
+// let nota2 = Number(prompt("Digte a nota 2"))
+// console.log(`A média od aluno foi: ${(nota1 + nota2) / 2}`)
+
+
+
+
 /*
     Exercício Python 64: Crie um programa que leia vários números inteiros pelo teclado. 
     O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final,

@@ -1345,3 +1345,164 @@ considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
 
 # print('VOLTE SEMPRE!')
 
+
+
+'''
+ Exercício Python 72: Crie um programa que tenha uma dupla totalmente preenchida com uma contagem por extenso, 
+ de zero até vinte. Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostrá-lo por extenso.
+'''
+
+# cont = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
+#     'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+
+# while True:
+#     numero = int(input('Digite um número entre 0 e 20: '))
+#     if numero >= 0 and numero <= 20:
+#         break
+#     print('Tente novamente. ', end="")
+# print(f'você digitou o número {cont[numero]}')
+
+
+
+
+'''
+Exercício Python 73: Crie uma tupla preenchida com os 20 primeiros 
+colocados da Tabela do Campeonato Brasileiro de Futebol, na ordem de colocação. 
+Depois mostre:
+'''
+
+# #2024
+# times = ('botafogo', 'palmeiras', 'flamengo', 'sao paulo','bahia', 'cruzeiro', 'fortaleza',
+# 'atlhetico-PR', 'vasco','bragantino', 'atletico-MG', 'juventude', 'internacional', 'criciuma',
+# 'cuiaba', 'vitoria', 'corinthias', 'gremio', 'atletico-GO', 'fluminense')
+
+
+# a) Os 5 primeiros times.
+
+# b) Os últimos 4 colocados.
+
+# c) Times em ordem alfabética.
+
+# d) Em que posição está o time do bahia.
+
+
+
+# print(f'Os 5 pirmeiros colocados são: {times[:5]}')
+# print(f'Os 4 ultimos colocados são: {times[-4:]}')
+# print(f'Os times em ordem alfabetica: {sorted(times)}')
+# print(f'a posição do time do bahia: {times.index("bahia") + 1}')
+
+
+
+
+'''
+Exercício Python 074: Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla. 
+Depois disso, mostre a listagem de números gerados e também indique o menor e o maior valor que estão na tupla.
+'''
+
+# from random import randint
+
+# numeros = ( randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,10), )
+
+# print('os números sorteados foram: ', end="")
+# for n in numeros:
+#     print(f'{n}', end="")
+# print(f'\nO maior valor é {max(numeros)}')
+# print(f'O menor valor é {min(numeros)}')
+
+
+
+
+
+'''
+Exercício Python 075: Desenvolva um programa que leia quatro valores 
+pelo teclado e guarde-os em uma tupla. No final, mostre:
+
+A) Quantas vezes apareceu o valor 9.
+
+B) Em que posição foi digitado o primeiro valor 3.
+
+C) Quais foram os números pares.
+
+'''
+
+
+# numeros = (
+#     int(input("Digite um número ")),
+#     int(input("Digite outro número ")),
+#     int(input("Digite mais um número ")),
+#     int(input("Digite o último número ")),
+# )
+
+# print(f'Os valores digitados foram {numeros}')
+
+# if(numeros.count(9) > 1):
+#     print(f'O número 9 aparceu {numeros.count(9)} vezes')
+# else:
+#     print(f'O número 9 aparceu {numeros.count(9)} vez')
+
+
+# if(3 in numeros):
+#     print(f'O número 3 foi digitado na {numeros.index(3)+1}° posição')
+# else:
+#     print(f'O número 3 não foi digitado')
+    
+
+# for i in numeros:
+#     if(i % 2 == 0):
+#         print(f'Os números pares são: {i}')
+    
+    
+    
+    
+'''
+    Exercício Python 076: Crie um programa que tenha uma tupla única com nomes de
+    produtos e seus respectivos preços, na sequência. No final, mostre uma listagem de preços,
+    organizando os dados em forma tabular.
+'''
+
+
+# produtos = (
+#     "Lápis", 1.5,
+#     "Caderno", 25,
+#     "Mochila", 180,
+#     "Estojo", 8,
+#     "lapiseira", 2,
+#     "Kit canetas", 15,
+#     "borracha", 2,
+#     "Livro", 43.90,
+#     "Corretivo", 2.3
+# )
+
+# print('=' * 50)
+# print(f'{"LISTAGEM DE PREÇOS":^50} ')
+# print('=' * 50)
+
+
+# for pos in range(0, len(produtos)):
+#     if(pos % 2 == 0):
+#         print(f'{produtos[pos]:.<30}', end=" ")
+#     else:
+#         print(f'R${produtos[pos]:.2f}')
+
+
+
+'''
+    Exercício Python 077: Crie um programa que tenha uma tupla com várias palavras (não usar acentos).
+    Depois disso, você deve mostrar, para cada palavra, quais são as suas vogais.
+'''
+
+
+palavras = (
+    "mercado", "python", "java script", "bola", 'teclado', 'mouse', "Real Madrid",
+    "viola", "violino", "piano"
+)
+
+vogais = ('a', 'e', 'i', 'o', 'u')
+
+for p in palavras:
+    print(f'\nNa palavra {p.upper()} temos - ', end="")
+    
+    for letra in p:
+        if(letra in 'aeiou'):
+            print(letra, end=" ")
